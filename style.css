@@ -1,0 +1,523 @@
+
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+
+ ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body{
+    margin:0;
+     /* background-color: #B63EC0; */
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+}
+/* MASK */
+.mask{
+    width: 100%;
+    height: 100%;
+    background: rgb(23, 8, 39);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: 800s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #ffffff;
+    background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #ffffff;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader:after {
+    background: #170827;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+
+.hide{
+    opacity: 0;
+}
+
+html{
+    /* overflow-y: hidden; */
+    /* -ms-overflow-style: none;
+    scrollbar-width: none;  */
+
+}
+
+
+
+.animation{
+    -webkit-animation: fade-in 2s linear; /* Safari 4+ */
+    -moz-animation: fade-in 2s linear; /* Fx 5+ */
+    -o-animation: fade-in 2s linear; /* Opera 12+ */
+    animation: fade-in 2s linear; /* IE 10+, Fx 29+ */
+
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+
+
+
+
+/*.background{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background-image: url(img/Rozetka220v1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+
+}*/
+
+
+/*INTRO*/
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/Rozetka220v1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro__inner{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 850px;
+
+
+
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+
+}
+
+.intro__photo{
+    width: 50%;
+}
+
+
+
+.intro__photo1{
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+}
+
+
+
+
+.intro__text{
+    width: 50%;
+    /* background-color: rgb(104, 100, 100);    */
+}
+
+.intro__UPtitle{
+    font-size: 55px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+    margin-bottom: 20px;
+    line-height: 0.8;
+
+
+
+}
+
+.intro__profesiontitle{
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+
+
+
+}
+
+
+
+.intro__bio{
+    margin-top: 30px;
+    line-height: 1.4;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.media__link{
+    display: flex;
+
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social__item{
+
+    display:flex;
+    justify-content: center;
+    margin-right: 15px;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid #d1d4d4;
+    border-radius: 20%;
+    transition: background-color .3s linear;
+
+
+}
+
+.social__item:hover{
+    background-color: #fff;
+
+}
+
+.social__item:hover .social__icon{
+    fill: #000;
+}
+
+.social__icon{
+    display: block;
+    fill: #ffffff;
+    height: 28px;
+
+    transition: fill .1s linear;
+
+}
+
+
+
+
+/* SECTION */
+
+ .section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+   background: url(img/Rozetka.png);
+   background-size: cover;
+
+
+}
+
+
+.section__inner{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.section__text{
+    display: flex;
+
+    align-items: center;
+    width: 50%;
+    padding-left: 60px;
+
+
+}
+
+.section__text__inner{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text__galery{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    color:#fff;
+    font-weight: 800px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.text__about{
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 30px;
+
+
+}
+
+.section__slaider{
+    display: flex;
+
+    padding-left: 20px;
+    width: 50%;
+
+
+
+
+
+}
+
+.one{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.blocckk{
+
+    width: 100%;
+
+
+}
+
+.block{
+
+    /* margin-bottom: 40px; */
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+    width: 100%;
+
+    position: absolute;
+    bottom:0;
+    right: 0px;
+    z-index: 2;
+
+
+
+
+}
+
+
+.slick-dots  button{
+    background: #fff;
+
+    width: 16px;
+    height: 16px;
+    padding: 0;
+
+    border-radius:50%;
+    border: 0;
+    font-size: 0;
+    cursor: pointer;
+    opacity: .5;
+    color:transparent;
+    margin: 0 5px;
+
+}
+
+.slick-dots button:focus {
+    outline: 0;
+}
+
+.slick-dots .slick-active button{
+    opacity: 1;
+}
+
+.section__img{
+
+   width: 100%;
+
+
+
+}
+.block{
+
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+@media(max-width:700px){
+
+    .intro__photo{
+       width: 100%;
+       margin-bottom: 12px;
+    }
+
+    .intro__photo1{
+        width: 180px;
+        height: 180px;
+    }
+
+    .intro__text{
+        width: 100%;
+        line-height: .1;
+
+    }
+    .intro__UPtitle{
+
+        margin-left: -10px;
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+
+    .intro__profesiontitle{
+        font-size: 16px;
+    }
+
+    .intro__bio{
+        margin-top: 15px;
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    .social__item{
+        width: 44px;
+    }
+
+    .social__icon{
+        height: 30px;
+    }
+
+    .text__galery{
+        margin-top: 25px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .text__about{
+        text-align: center;
+        padding: 0 20px;
+        font-size: 18px;
+    }
+
+    .section__text{
+        padding-left: 0;
+
+        width: 100%;
+    }
+
+    .section__slaider{
+        width: 100%;
+        margin-top: -100px;
+        /* padding: 0 10px; */
+
+    }
+
+    .one{
+        justify-content: center;
+        width: 100%;
+    }
+
+
+
+    .section__img{
+        display: flex;
+        padding: 0 5px;
+        margin: auto;
+        width: 95%;
+        height: 300px;
+
+    }
+
+
+    .blocckk{
+
+        margin: auto;
+    }
+
+    .block{
+        margin-bottom: 33px;
+    }
+
+
+
+}
