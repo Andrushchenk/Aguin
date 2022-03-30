@@ -34,7 +34,7 @@ $(function(){
         });
     });
     updateAnchors();
-
+});
 
 
 // SLAIDER
@@ -54,7 +54,7 @@ $(function(){
 
 
 
- });
+
 
 
 //  MASK
