@@ -45,7 +45,7 @@ $(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // fade:true,
+        fade:true,
         arrows:false,
         dots:true,
         autoplay: true,
@@ -66,6 +66,8 @@ window.addEventListener('load', () => {
         mask.remove();
     }, 600)
 });
+
+
 
 
 
