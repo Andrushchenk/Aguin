@@ -298,10 +298,11 @@ p,h1,h2,h3,h4,h5,h6{
 
 .section__text{
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 50%;
-    padding-left: 60px;
+
 
 
 }
@@ -309,12 +310,14 @@ p,h1,h2,h3,h4,h5,h6{
 .section__text__inner{
     display: flex;
     flex-direction: column;
+
+    width: 400px;
 }
 
 
 .text__galery{
     font-family: 'Montserrat', sans-serif;
-    font-size: 55px;
+    font-size: 40px;
     color:#fff;
     font-weight: 800px;
     margin-bottom: 30px;
@@ -324,7 +327,7 @@ p,h1,h2,h3,h4,h5,h6{
 .text__about{
     color: #fff;
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 25px;
 
 
 }
@@ -481,7 +484,8 @@ p,h1,h2,h3,h4,h5,h6{
     }
 
     .section__text{
-        padding-left: 0;
+
+
 
         width: 100%;
     }
