@@ -468,6 +468,22 @@ p,h1,h2,h3,h4,h5,h6{
 
     /* outline: none; */
 }
+
+.btn1{
+    display: flex;
+    width: 17%;
+    justify-content: center;
+}
+.btn2{
+    display: flex;
+    width: 17%;
+    justify-content: center;
+}
+.btn3{
+    display: flex;
+    width: 17%;
+    justify-content: center;
+}
 .works__fon{
 
     width: 100%;
@@ -520,10 +536,6 @@ p,h1,h2,h3,h4,h5,h6{
 .works1:hover .maskk{
     opacity: 1;
 }
-
-
-
-
 
 
 .works__img{
