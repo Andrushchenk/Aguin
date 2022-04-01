@@ -445,10 +445,10 @@ p,h1,h2,h3,h4,h5,h6{
 .works__buttons{
     display: flex;
     justify-content: center;
-    height: 27px;
+    /* height: 27px; */
     width: 100%;
 
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 
@@ -651,6 +651,17 @@ p,h1,h2,h3,h4,h5,h6{
         margin-bottom: 33px;
     }
 
+    .works__buttons{
+       margin: 0 0;
+       flex-wrap: wrap;
+       margin-bottom: -30px;
+    }
+    .works1{
+        width: 100%;
+    }
 
+    .works__fon{
+        padding-top: 70px ;
+    }
 
 }
