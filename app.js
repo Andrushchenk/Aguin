@@ -1,40 +1,40 @@
 
 // SCROLL
-// var anchors = [];
-// var currentAnchor = -1;
-// var isAnimating  = false;
-// $(function(){
-//     function updateAnchors() {
-//         anchors = [];
-//         $('.scroll').each(function(i, element){
-//             anchors.push( $(element).offset().top );
-//         });
-//     }
-//     $('body').on('mousewheel', function(e){
-//         e.preventDefault();
-//         e.stopPropagation();
-//         if( isAnimating ) {
-//             return false;
-//         }
-//         isAnimating  = true;
-//         if( e.originalEvent.wheelDelta >= 0 ) {
-//             currentAnchor--;
-//         }else{
-//             currentAnchor++;
-//         }
-//         if( currentAnchor > (anchors.length - 1)
-//            || currentAnchor < 0 ) {
-//             currentAnchor = 0;
-//         }
-//         isAnimating  = true;
-//         $('html, body').animate({
-//             scrollTop: parseInt( anchors[currentAnchor] )
-//         }, 500, 'swing', function(){
-//             isAnimating  = false;
-//         });
-//     });
-//     updateAnchors();
-// });
+var anchors = [];
+var currentAnchor = -1;
+var isAnimating  = false;
+$(function(){
+    function updateAnchors() {
+        anchors = [];
+        $('.scroll').each(function(i, element){
+            anchors.push( $(element).offset().top );
+        });
+    }
+    $('body').on('mousewheel', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if( isAnimating ) {
+            return false;
+        }
+        isAnimating  = true;
+        if( e.originalEvent.wheelDelta >= 0) {
+            currentAnchor--;
+        }else{
+            currentAnchor++;
+        }
+        if( currentAnchor > (anchors.length - 1)
+           || currentAnchor < 0 ) {
+            currentAnchor = 0;
+        }
+        isAnimating  = true;
+        $('html, body').animate({
+            scrollTop: parseInt( anchors[currentAnchor] )
+        }, 500, 'swing', function(){
+            isAnimating  = false;
+        });
+    });
+    updateAnchors();
+});
 
 
 // SLAIDER
@@ -76,21 +76,21 @@ window.addEventListener('load', () => {
 
 $(document).ready(function () {
     $(".works__arts").show();
-    $(".works__ilustration").hide();
-    $(".works__banners").hide();
+    $(".works__illustrations").hide();
+    $(".works__others").hide();
             $(".btn1").click(function () {
                 $(".works__arts").show();
-                $(".works__ilustration").hide();
-                $(".works__banners").hide();
+                $(".works__illustrations").hide();
+                $(".works__others").hide();
             });
         $(".btn2").click(function () {
-                $(".works__ilustration").show();
+                $(".works__illustrations").show();
                 $(".works__arts").hide();
-                $(".works__banners").hide();
+                $(".works__others").hide();
         });
         $(".btn3").click(function () {
-            $(".works__banners").fadeIn(2000);
-            $(".works__ilustration").hide();
+            $(".works__others").show();
+            $(".works__illustrations").hide();
             $(".works__arts").hide();
     });
   });

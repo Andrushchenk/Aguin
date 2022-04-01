@@ -282,6 +282,8 @@ p,h1,h2,h3,h4,h5,h6{
     width: 100%;
    background: url(img/Rozetka.png);
    background-size: cover;
+   background-repeat: no-repeat;
+   overflow: hidden;
 
 
 }
@@ -423,10 +425,10 @@ p,h1,h2,h3,h4,h5,h6{
 
 .works{
     display: flex;
-    padding-top: 40px;
+
     width: 100%;
     height: 100%;
-    background: url("3.png");
+    background: url("/img/3.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -434,6 +436,7 @@ p,h1,h2,h3,h4,h5,h6{
 .works__inner{
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
     width: 100%;
     height: 100%;
 }
@@ -467,7 +470,7 @@ p,h1,h2,h3,h4,h5,h6{
 
     width: 100%;
     height: 100%;
-    background: url("/вікно.svg") center;
+    background: url("/img/вікно.svg") center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 20px;
@@ -481,9 +484,24 @@ p,h1,h2,h3,h4,h5,h6{
     height: 100%;
     width: 100%;
 
+}
 
+.works__illustrations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+    height: 100%;
+    width: 100%;
+}
 
+.works__others{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
 }
 
 .works1{
