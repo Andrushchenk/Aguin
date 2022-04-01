@@ -37,6 +37,7 @@ $(function(){
 });
 
 
+
 // SLAIDER
     let slider = $("#slaider");
 
