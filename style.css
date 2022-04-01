@@ -353,6 +353,7 @@ p,h1,h2,h3,h4,h5,h6{
     height: 100%;
     width: 100%;
     align-items: center;
+
 }
 
 .blocckk{
@@ -484,6 +485,7 @@ p,h1,h2,h3,h4,h5,h6{
     width: 17%;
     justify-content: center;
 }
+
 .works__fon{
 
     width: 100%;
@@ -628,9 +630,6 @@ p,h1,h2,h3,h4,h5,h6{
     }
 
     .section__text{
-
-
-
         width: 100%;
     }
 
@@ -661,6 +660,7 @@ p,h1,h2,h3,h4,h5,h6{
 
 
     .block{
+        margin: 0;
         margin-bottom: 33px;
     }
 
@@ -675,6 +675,22 @@ p,h1,h2,h3,h4,h5,h6{
 
     .works__fon{
         padding-top: 70px ;
+    }
+
+    .btn1{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .btn2{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .btn3{
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
 }
