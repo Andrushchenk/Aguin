@@ -71,3 +71,36 @@ window.addEventListener('load', () => {
 
 
 
+
+
+
+$(document).ready(function () {
+    $(".works__arts").show();
+    $(".works__ilustration").hide();
+    $(".works__banners").hide();
+            $(".btn1").click(function () {
+                $(".works__arts").show();
+                $(".works__ilustration").hide();
+                $(".works__banners").hide();
+            });
+        $(".btn2").click(function () {
+                $(".works__ilustration").show();
+                $(".works__arts").hide();
+                $(".works__banners").hide();
+        });
+        $(".btn3").click(function () {
+            $(".works__banners").fadeIn(2000);
+            $(".works__ilustration").hide();
+            $(".works__arts").hide();
+    });
+  });
+
+
+var btns = document.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
