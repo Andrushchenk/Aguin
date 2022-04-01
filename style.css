@@ -516,7 +516,7 @@ p,h1,h2,h3,h4,h5,h6{
 
 }
 
-.works1:hover .mask{
+.works1:hover .maskk{
     opacity: 1;
 }
 
@@ -531,7 +531,7 @@ p,h1,h2,h3,h4,h5,h6{
 
 }
 
-.mask{
+.maskk{
     display: flex;
     width: 100%;
     height: 100%;
