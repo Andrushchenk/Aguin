@@ -157,7 +157,7 @@ p,h1,h2,h3,h4,h5,h6{
     align-items:center;
     height: 100vh;
     width: 100%;
-    background-image: url(img/Rozetka220v1.png);
+    background-image: url(/img/fon1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -282,7 +282,7 @@ p,h1,h2,h3,h4,h5,h6{
     display: flex;
     height: 100vh;
     width: 100%;
-   background-image: url(img/Rozetka.png);
+   background-image: url(img/fon2.png);
    background-size: cover;
    background-repeat: no-repeat;
    overflow: hidden;
@@ -431,7 +431,7 @@ p,h1,h2,h3,h4,h5,h6{
 
     width: 100%;
     height: 100%;
-    background-image: url(img/3.png);
+    background-image: url(img/fon3.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -490,7 +490,7 @@ p,h1,h2,h3,h4,h5,h6{
 
     width: 100%;
     height: 100%;
-    background: url(img/вікно.svg) center;
+    background: url(img/transparent__fon.svg) center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 20px;
