@@ -157,8 +157,8 @@ p,h1,h2,h3,h4,h5,h6{
     align-items:center;
     height: 100vh;
     width: 100%;
-    background-color: #4d196e;
-    /* background-image: url(img/fon2.png); */
+
+    background-image: url(img/fon1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
